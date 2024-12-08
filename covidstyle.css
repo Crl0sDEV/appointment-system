@@ -1,0 +1,871 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;    
+}
+
+body {
+    overflow-x: hidden; 
+}
+    .margin{
+        z-index: 3;
+        position: fixed;
+        height: 1cm;
+        width: 100%;
+        background-color: #2B7C3C;
+        left: 0.1px;
+        top: 0.1px;
+    }
+    
+    .margin1{
+        z-index: 3;
+        position: fixed;
+        height: 45px;
+        width: 100%;
+        background-color: white;
+        border-style: solid; 
+        border-width: 1pt;
+        border-color: #E1E0E0;
+        top: 11px;
+    }
+    
+    .margin2{
+        z-index: 3;
+        position: fixed;
+        height: 60px;
+        width:100%;
+        background-color: white;
+        border-style: solid; 
+        border-width: 1pt;
+        border-color: #E1E0E0;
+        top: 53px;
+    }
+    .cp {
+        z-index: 3;
+        position: fixed;
+        left: 1%;
+        top: 15px;
+        
+    }
+    
+    .cp p {
+        display: none;
+        z-index: 3;
+        position: fixed;
+        left: 38px;
+        top: 9px;
+        font-size: 10pt; 
+        font-family: "Gill Sans", sans-serif;    
+    }
+    .mail {
+        z-index: 3;
+        position: fixed;
+        left: 8%;
+        top: 15px;
+        
+    }
+    
+    .mail p {
+        display: none;
+        z-index: 3;
+        position: fixed;
+        left: 45px;
+        top: 9px;
+        font-size: 10pt; 
+        font-family: "Gill Sans", sans-serif;    
+    }
+    
+    .facebook {
+        z-index: 3;
+        position: fixed;
+        left: 17%;
+        top: 19px;
+        
+    }
+    
+    .insta {
+        z-index: 3;
+        position: fixed;
+        left: 24%;
+        top: 19px;
+        
+    }
+    
+    .logo1 {
+        z-index: 3;
+        position: fixed;
+        left: 26%;
+        top: 53px;
+    }
+
+    .menu{
+        display: none;
+        z-index: 3;
+        position: absolute;
+        width: auto; /* Change width to auto */
+        float: left; /* Float the menu to the left */
+        height: 70px;
+        top: 50px;
+    }
+    
+    ul{
+        display: none;
+        z-index: 3;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul li{
+        display: none;
+        z-index: 3;
+        list-style: none;
+        margin-left: 35px;
+        margin-top: 27px;
+        font-size: 13px;
+    }
+    
+    ul li a{
+        display: none;
+        z-index: 3;
+        text-decoration: none;
+        color: #000000;
+        font-family: "Gill Sans", sans-serif;    
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+    
+    ul li a:hover{
+        display: none;
+        z-index: 3;
+        color: #0011ff;
+        text-decoration: underline;
+    }
+
+    .search{
+        z-index: 3;
+        position: fixed;
+        width: 190px;
+        float: left;
+        margin-left: 62%;
+        top: 6px;
+    }
+    
+    .srch{
+            font-family: "Gill Sans", sans-serif;
+            width: 110px;
+            height: 25px;
+            background: #EFEEEE;
+            border: none;
+            margin-top: 13px;
+            color: #fff;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .btn{
+            width: 70px;
+            height: 25px;
+            background: #E1E0E0;
+            border: 2px solid #E1E0E0;
+            margin-top: 13px;
+            color: #070707;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: #000;
+        }
+        
+        .btn:focus{
+            outline: none;
+        }
+        
+        .srch:focus{
+            outline: none;
+        }
+        .dropbtn {
+            z-index: 3;
+            position: fixed;
+            background-color: #DDDCDC;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            top:65px;
+            left: 2%;
+    
+                }
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 3;
+            top:90px;
+    
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color: #ddd;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+          .web3{
+            position: absolute;
+            height: 435px;
+            width: 100%;
+            background-color: #3e8e41;
+            border-style: solid; 
+            border-width: 1pt;
+            border-color: #3e8e41;
+            top: 11px;
+          }
+
+          .content3 img{
+            position: absolute;
+            left: 50%;
+            top: 280px;
+            transform: translate(-50%, -50%);
+          }
+
+          .content3 h2{
+            position: absolute;
+            left: 50%; /* Position from the center */
+            top: 81%; /* Position from the center */
+            transform: translate(-50%, -50%); /* Center the element */
+            font-size: 23px; /* Responsive font size based on viewport width */
+            font-family: "Gill Sans", sans-serif;
+            text-align: center;
+          }
+
+          .content3 p{
+            position:absolute;
+            font-size: 9.5pt; 
+            font-family: "Gill Sans", 
+            sans-serif; 
+            color: #000000;
+            line-height: 1.8;
+            left:50%;
+            transform: translateX(-50%);
+            top: 85%;
+            width: 80%;
+            text-align: center;
+          }
+
+          .footer {
+            position: absolute;
+            left: -270px;
+            bottom: -175px;
+            width: 360%;
+            height: 27%;
+            background-color: #D8D5D5;
+            color: white;
+            text-align: center;
+        }
+        
+        .footlogo {
+            position: absolute;
+            left: 16vw;
+            transform: translateX(-50%);
+            bottom: -31.5%;  /* Position it above the footer */
+            width: auto;  
+            height: auto;  
+            z-index: 2;  
+        }
+
+        .footext {
+            display: none;  /* Assuming this is intended to be toggled with JavaScript */
+            position: absolute;
+            left: 20%;
+            transform: translateX(-50%);
+            bottom: -16.5%;
+            width: 100%;
+            height: auto;  /* Adjusted for better responsiveness */
+            z-index: 2;  /* Z-index between footer and footlogo */
+        }
+
+        .footp {
+            position: absolute;
+            right: 30vw;
+            transform: translateX(50%);
+            bottom: -100px; /* Adjusted for responsiveness */
+            font-size: 12px; /* Adjusted for responsiveness */
+            font-family: "Gill Sans", sans-serif;
+            z-index: 3;
+            color: #000;
+            text-align: center;
+        }
+          
+        .footloc {
+            position: absolute;
+            right: 30vw;
+            transform: translateX(50%);
+            bottom: -135px;
+            font-size: 9pt;
+            font-family: "Gill Sans", sans-serif;
+            display: flex;
+            align-items: center;  /* Align items vertically */
+            justify-content: center;  /* Align items horizontally */
+            z-index: 3;
+        }
+        
+        .footloc h2 {
+            margin: 0;  /* Remove default margin */
+            font-size: inherit;  /* Inherit font size from parent */
+            font-family: inherit;  /* Inherit font family from parent */
+        }
+         
+         
+        
+                @media  screen and (min-width: 768px) {
+
+                    .margin{
+                        z-index: 3;
+                        position: fixed;
+                        height: 1cm;
+                        width:100%;
+                        background-color: #2B7C3C;
+                        left: 0.1px;
+                        top: 0.1px;
+                    }
+                    
+                    .margin1{
+                        z-index: 3;
+            position: fixed;
+                        height: 45px;
+                        width: 100%;
+                        background-color: white;
+                        border-style: solid; 
+                        border-width: 1pt;
+                        border-color: #E1E0E0;
+                        top: 11px;
+                    }
+                    
+                    .margin2{
+                        z-index: 3;
+            position: fixed;
+                        height: 60px;
+                        width: 100%;
+                        background-color: white;
+                        border-style: solid; 
+                        border-width: 1pt;
+                        border-color: #E1E0E0;
+                        top: 53px;
+                    }
+                    .cp {
+                        z-index: 3;
+            position: fixed;
+                        left: 1%;
+                        top: 15px;
+                        
+                    }
+                    
+                    .cp p {
+                        display: none;
+                        z-index: 3;
+            position: fixed;
+                        left: 38px;
+                        top: 9px;
+                        font-size: 10pt; 
+                        font-family: "Gill Sans", sans-serif;    
+                    }
+                    .mail {
+                        z-index: 3;
+            position: fixed;
+                        left: 5.5%;
+                        top: 15px;
+                        
+                    }
+                    
+                    .mail p {
+                        display: none;
+                        z-index: 3;
+            position: fixed;
+                        left: 45px;
+                        top: 9px;
+                        font-size: 10pt; 
+                        font-family: "Gill Sans", sans-serif;    
+                    }
+                    
+                    .facebook {
+                        z-index: 3;
+            position: fixed;
+                        left: 91%;
+                        top: 19px;
+                        
+                    }
+                    
+                    .insta {
+                        z-index: 3;
+            position: fixed;
+                        left: 95.5%;
+                        top: 20px;
+                        
+                    }
+                    
+                    .logo1 {
+                        z-index: 3;
+            position: fixed;
+                        left: 38%;
+                        top: 53px;
+                    }
+                
+                    .menu{
+                        display: none;
+                        z-index: 3;
+                        position: absolute;
+                        width: auto; /* Change width to auto */
+                        float: left; /* Float the menu to the left */
+                        height: 70px;
+                        top: 50px;
+                    }
+                    
+                    ul{
+                        display: none;
+                        z-index: 3;
+                        float: left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    ul li{
+                        display: none;
+                        z-index: 3;
+                        list-style: none;
+                        margin-left: 35px;
+                        margin-top: 27px;
+                        font-size: 13px;
+                    }
+                    
+                    ul li a{
+                        display: none;
+                        z-index: 3;
+                        text-decoration: none;
+                        color: #000000;
+                        font-family: "Gill Sans", sans-serif;    
+                        font-weight: bold;
+                        transition: 0.4s ease-in-out;
+                    }
+                    
+                    ul li a:hover{
+                        display: none;
+                        z-index: 3;
+                        color: #0011ff;
+                        text-decoration: underline;
+                    }
+                    .search{
+                        z-index: 3;
+            position: fixed;
+                        width: 190px;
+                        float: left;
+                        margin-left: 78%;
+                        top: 59px;
+                    }
+                    
+                    .srch{
+                            font-family: "Gill Sans", sans-serif;
+                            width: 110px;
+                            height: 25px;
+                            background: #EFEEEE;
+                            border: none;
+                            margin-top: 13px;
+                            color: #fff;
+                            border-right: none;
+                            font-size: 16px;
+                            float: left;
+                            padding: 10px;
+                            border-bottom-left-radius: 5px;
+                            border-top-left-radius: 5px;
+                        }
+                        .btn{
+                            width: 70px;
+                            height: 25px;
+                            background: #E1E0E0;
+                            border: 2px solid #E1E0E0;
+                            margin-top: 13px;
+                            color: #070707;
+                            font-size: 15px;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            transition: 0.2s ease;
+                            cursor: pointer;
+                        }
+                        .btn:hover{
+                            color: #000;
+                        }
+                        
+                        .btn:focus{
+                            outline: none;
+                        }
+                        
+                        .srch:focus{
+                            outline: none;
+                        }
+                        .dropbtn {
+                            z-index: 3;
+                            position: fixed;
+                            background-color: #DDDCDC;
+                            color: white;
+                            padding: 10px;
+                            font-size: 16px;
+                            border: none;
+                            top:65px;
+                            left: 2%;
+    
+                    
+                                }
+                          .dropdown {
+                            position: relative;
+                            display: inline-block;
+                          }
+                          
+                          .dropdown-content {
+                           display: none;
+                             position: absolute;
+                            background-color: #f1f1f1;
+                            min-width: 160px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                            top:90px;
+                    
+                          }
+                          
+                          .dropdown-content a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                          }
+                          
+                          .dropdown-content a:hover {background-color: #ddd;}
+                          
+                          .dropdown:hover .dropdown-content {display: block;}
+                          
+                          .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+                          .design1 img{
+                                position: absolute;
+                                left: -1%;
+                                top: 2%;
+                    
+                          }
+
+                          .design2 img{
+                            position: absolute;
+                            left: 70%;
+                            top: 40%;
+                          }
+
+                          .footer {
+                            position: absolute;
+                            left: -270px;
+                            bottom: -175px;
+                            width: 360%;
+                            height: 27%;
+                            background-color: #D8D5D5;
+                            color: white;
+                            text-align: center;
+                        }
+                        
+                        .footlogo {
+                            position: absolute;
+                            left: 14vw;
+                            transform: translateX(-50%);
+                            bottom: -32%;  /* Position it above the footer */
+                            width: auto;  
+                            height: auto;  
+                            z-index: 2;  
+                        }
+                
+                        .footext {
+                            display: block;  /* Assuming this is intended to be toggled with JavaScript */
+                            position: absolute;
+                            left: 73vw;
+                            transform: translateX(-50%);
+                            bottom: -24%;
+                            width: 100%;
+                            height: auto;  /* Adjusted for better responsiveness */
+                            z-index: 2;  /* Z-index between footer and footlogo */
+                        }
+                
+                        .footp {
+                            position: absolute;
+                            right: 20vw;
+                            transform: translateX(50%);
+                            bottom: -95px; /* Adjusted for responsiveness */
+                            font-size: 12px; /* Adjusted for responsiveness */
+                            font-family: "Gill Sans", sans-serif;
+                            z-index: 3;
+                            color: #000;
+                            text-align: center;
+                        }
+                          
+                        .footloc {
+                            position: absolute;
+                            right: 20vw;
+                            transform: translateX(50%);
+                            bottom: -135px;
+                            font-size: 9pt;
+                            font-family: "Gill Sans", sans-serif;
+                            display: flex;
+                            align-items: center;  /* Align items vertically */
+                            justify-content: center;  /* Align items horizontally */
+                            z-index: 3;
+                        }
+                        
+                        .footloc h2 {
+                            margin: 0;  /* Remove default margin */
+                            font-size: inherit;  /* Inherit font size from parent */
+                            font-family: inherit;  /* Inherit font family from parent */
+                        }
+                  }
+            
+  
+                  @media  screen and (min-width: 1000px) {
+            
+                    .margin{
+                        z-index: 3;
+                        position: fixed;
+                        height: 1cm;
+                        width: 100%;
+                        background-color: #2B7C3C;
+                        left: 0.1px;
+                        top: 0.1px;
+                    }
+                    
+                    .margin1{
+                        z-index: 3;
+                        position: fixed;
+                        height: 45px;
+                        width: 100%;
+                        background-color: white;
+                        border-style: solid; 
+                        border-width: 1pt;
+                        border-color: #E1E0E0;
+                        top: 11px;
+                    }
+                    
+                    .margin2{
+                        z-index: 3;
+                        position: fixed;
+                        height: 60px;
+                        width: 100%;
+                        background-color: white;
+                        border-style: solid; 
+                        border-width: 1pt;
+                        border-color: #E1E0E0;
+                        top: 53px;
+                    }
+                    .cp {
+                        z-index: 3;
+                        position: fixed;
+                        left: 10px;
+                        top: 15px;
+                        
+                    }
+                    
+                    .cp p {
+                        display: block;
+                        z-index: 3;
+                        position: fixed;
+                        left: 45px;
+                        top: 26px;
+                        font-size: 10pt; 
+                        font-family: "Gill Sans", sans-serif;    
+                    }
+                    
+                    .mail {
+                        z-index: 3;
+                        position: fixed;
+                        left: 135px;
+                        top: 15px;
+                        
+                    }
+                    
+                    .mail p {
+                        display: block;
+                        z-index: 3;
+                        position: fixed;
+                        left: 175px;
+                        top: 26px;
+                        font-size: 10pt; 
+                        font-family: "Gill Sans", sans-serif;    
+                    }
+                    
+                    .facebook {
+                        z-index: 3;
+                        position: fixed;
+                        left: 94%;
+                        top: 19px;
+                        
+                    }
+                    
+                    .insta {
+                        z-index: 3;
+                        position: fixed;
+                        left: 96%;
+                        top: 19px;
+                        
+                    }
+            
+                    .search{
+                        z-index: 3;
+                        position: fixed;
+                        width: 350px;
+                        float: left;
+                        margin-left: 85%;
+                        top: 59px;
+                    }
+            
+                    .logo1 {
+                        z-index: 3;
+                        position: fixed;
+                        left: 40%;
+                        top: 53px;
+                    }
+            
+                    .dropbtn {
+                        display: none;
+                        z-index: 3;
+                        position: fixed;
+                        background-color: #DDDCDC;
+                        color: white;
+                        padding: 10px;
+                        font-size: 16px;
+                        border: none;
+                        top:50px;
+                        left: 70%;
+                
+                            }
+            
+                            .menu{
+                                display: block;
+                                z-index: 9999;
+                                position: fixed;
+                                width: 100%; /* Change width to auto */
+                                height: 70px;
+                                top: 50px;
+                            }
+                            
+                            ul{
+                                display: block;
+                                z-index: 3;
+                                float: left;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            ul li{
+                                display: block;
+                                z-index: 3;
+                                list-style: none;
+                                margin-left: 35px;
+                                margin-top: 27px;
+                                font-size: 13px;
+                            }
+                            
+                            ul li a{
+                                display: block;
+                                z-index: 3;
+                                text-decoration: none;
+                                color: #000000;
+                                font-family: "Gill Sans", sans-serif;    
+                                font-weight: bold;
+                                transition: 0.4s ease-in-out;
+                            }
+                            
+                            ul li a:hover{
+                                display: block;
+                                z-index: 3;
+                                color: #0011ff;
+                                text-decoration: underline;
+                            }
+
+                            .footer {
+                                position: absolute;
+                                left: -270px;
+                                bottom: -175px;
+                                width: 360%;
+                                height: 27%;
+                                background-color: #D8D5D5;
+                                color: white;
+                                text-align: center;
+                            }
+                            
+                            .footlogo {
+                                position: absolute;
+                                left: 14vw;
+                                transform: translateX(-50%);
+                                bottom: -32%;  /* Position it above the footer */
+                                width: auto;  
+                                height: auto;  
+                                z-index: 2;  
+                            }
+                    
+                            .footext {
+                                display: block;  /* Assuming this is intended to be toggled with JavaScript */
+                                position: absolute;
+                                left: 72vw;
+                                transform: translateX(-50%);
+                                bottom: -23%;
+                                width: 100%;
+                                height: auto;  /* Adjusted for better responsiveness */
+                                z-index: 2;  /* Z-index between footer and footlogo */
+                            }
+                    
+                            .footp {
+                                position: absolute;
+                                right: 15vw;
+                                transform: translateX(50%);
+                                bottom: -95px; /* Adjusted for responsiveness */
+                                font-size: 12px; /* Adjusted for responsiveness */
+                                font-family: "Gill Sans", sans-serif;
+                                z-index: 3;
+                                color: #000;
+                                text-align: center;
+                            }
+                              
+                            .footloc {
+                                position: absolute;
+                                right: 15vw;
+                                transform: translateX(50%);
+                                bottom: -135px;
+                                font-size: 9pt;
+                                font-family: "Gill Sans", sans-serif;
+                                display: flex;
+                                align-items: center;  /* Align items vertically */
+                                justify-content: center;  /* Align items horizontally */
+                                z-index: 3;
+                            }
+                            
+                            .footloc h2 {
+                                margin: 0;  /* Remove default margin */
+                                font-size: inherit;  /* Inherit font size from parent */
+                                font-family: inherit;  /* Inherit font family from parent */
+                            }
+                  }
+            

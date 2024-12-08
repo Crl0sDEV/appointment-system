@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <link rel="stylesheet" href="finalstyle.css">
+        <style>
+            .suggestions {
+                border: 1px solid #ccc;
+                max-height: 150px;
+                overflow-y: auto;
+                background: white;
+                position: absolute;
+                width: 95%;
+                z-index: 1000;
+            }
+            .suggestions p {
+                padding: 10px;
+                margin: 0;
+                cursor: pointer;
+            }
+            .suggestions p:hover {
+                background-color: #f0f0f0;
+            }
+            .hidden {
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class = "header"></div>
+        <div class = "margin">
+        </div>
+        <div class = "margin1">
+            </div>
+        <div class ="cp">
+            <img src = "pictures/phone.png" alt="cp" width="35px" height="35px">
+            <p>09175603725</p>
+        </div>
+
+        <div class ="mail">
+            <img src = "pictures/email.png" alt="mail" width="35px" height="35px">
+            <p>info@gammacaresi.com</p>
+        </div>
+
+        <div class ="facebook">
+            <a href="https://www.facebook.com/gammacaremsi" target="_blank"><img src="pictures/fb.png" alt="f" width="23px" height="23px"/></a>
+        </div>
+
+        <div class ="insta">
+            <a href="https://www.instagram.com/gammacaremsi?igsh=bnFkZzdsYjR0Z3E=" target="_blank"><img src="pictures/ig.png" alt="f" width="23px" height="23px"/></a>
+        </div>
+
+        <div class = "margin2">
+        
+        <div class ="logo1">
+            <img src = "pictures/logo.png" alt="mail" width="230px" height="60px">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.example.com">Home</a></li>
+                <li><a href="About_Us.html">About us</a></li>
+                <li><a href="finalServices.html">Services</a></li>
+                <li><a href="https://www.example.com">Schedule</a></li>
+                <li><a href="https://www.example.com">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input id="serviceSearch" class="srch" type="search" name="" placeholder=" ⌕ Search" oninput="showSuggestions()" autocomplete="off">
+            <button class="submit-btn" onclick="searchServices()">Search</button>
+            <div id="suggestions" class="suggestions hidden"></div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"><img src = "pictures/lines.png" alt="mail" width="30px" height="15px">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="About_Us.html">About us</a>
+              <a href="finalServices.html">Services</a>
+              <a href="#">Schedule</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+          <div class ="ser">
+            <h1>Services</h1>
+        </div>
+        <div class="subtext">
+                <p>Welcome to our Clinic Services Page! Discover<br> personalized
+                    care for your well-being. From medical<br> evaluations to
+                    specialized treatments, we're here to<br> support you. Let's begin
+                    your journey to optimal health.<br> Explore our services now!</p>
+        </div>
+
+        <div class="rectangle">
+        </div>
+
+        <div class="rectangle1">
+        </div>
+        <div id="servicesContainer">
+<div class = "row1"> // first row with 4 service card
+<div class = g1> 
+
+    <div class="service-card" data-name="2D Echo w/ Doppler" data-rate="1200">
+        <div class = "pic1">
+            <img src="pictures/echo.JPG" alt="m1" width="235px" height="205px"/>
+            <div class = "under1">
+                <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+                <h2>2D Echo w/ Doppler</h2>
+            </div>
+            <div class = "pc1">
+            <img src="pictures/d1.png" alt="u1" width="40px" height="40px"/>
+            <p>A 2D echo with Doppler is a non-invasive ultrasound <br>
+                test that images the heart and measures blood flow.
+            </p>
+        </div>
+        <div class ="b1">
+            <a href="EchoDoppler.html">
+                <button>MORE</button>
+              </a>
+        </div>    
+    </div>
+    </div>
+
+    <div class="service-card" data-name="12-Lead ECG" data-rate="2000">
+    <div class = "pic2">
+        <img src="pictures/ecg.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under2">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>12-Lead ECG</h2>
+        </div>
+        <div class = "pc2">
+                <img src="pictures/d2.png" alt="u1" width="40px" height="40px"/>
+                <p>A 12-lead ECG measures heart electrical activity from<br>
+                     various angles to check rhythm and spot issues.
+                </p>
+            </div>
+            <div class ="b2">
+                <a href="ECG.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+</div>
+
+<div class="g2">
+    <div class="service-card" data-name="COVID-19 Tests" data-rate="1500">
+<div class = "pic3">
+        <img src="pictures/test.jpg" alt="m1" width="235px" height="205px"/>
+        <div class = "under3">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>COVID-19 Tests</h2>
+        </div>
+        <div class = "pc3">
+                <img src="pictures/d3.png" alt="u1" width="40px" height="40px"/>
+                <p>COVID-19 tests find the SARS-CoV-2 virus to help <br>
+                    identify and manage cases.</p>
+            </div>
+            <div class ="b3">
+                <a href="covid.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+<div class="service-card" data-name="Doctor's Clinic" data-rate="1000">
+<div class = "pic4">
+        <img src="pictures/doctor.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under4">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Doctor’s Clinic</h2>
+        </div>
+        <div class = "pc4">
+                <img src="pictures/d4.png" alt="u1" width="40px" height="40px"/>
+                <p>A doctor's clinic provides medical consultations,<br> treatment, and preventive care to patients.
+                </p>
+            </div>
+            <div class ="b4">
+                <a href="clinic.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class = "row2"> // Second row with 4 service card
+<div class ="g3">
+    <div class="service-card" data-name="Drug Testing">
+<div class = "pic5">
+        <img src="pictures/drug.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under5">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Drug Testing</h2>
+        </div>
+        <div class = "pc5">
+                <img src="pictures/d5.png" alt="u1" width="40px" height="40px"/>
+                <p>Drug testing detects drugs in samples for screening<br> and monitoring purposes.
+                </p>
+            </div>
+            <div class ="b5">
+                <a href="drug.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+<div class="service-card" data-name="Laboratory Test" data-rate="700">
+<div class = "pic6">
+        <img src="pictures/lab.jpg" alt="m1" width="235px" height="205px"/>
+        <div class = "under6">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Laboratory Test</h2>
+        </div>
+        <div class = "pc6">
+                <img src="pictures/d6.png" alt="u1" width="40px" height="40px"/>
+                <p>Laboratory tests diagnose and monitor conditions,<br> providing insights into health.</p>
+            </div>
+            <div class ="b6">
+                <a href="labtest.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+</div>
+<div class = "g4">
+    <div class="service-card" data-name="Minor Surgery" data-rate="2500">
+<div class = "pic7">
+        <img src="pictures/surgery.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under7">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Minor Surgery</h2>
+        </div>
+        <div class = "pc7">
+                <img src="pictures/d7.png" alt="u1" width="40px" height="40px"/>
+                <p>Minor surgery treats health issues using local<br> anesthesia,
+                     often on an outpatient basis.
+                </p>
+            </div>
+            <div class ="b7">
+                <a href="minorsur.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+
+</div>
+</div>
+
+<div class="service-card" data-name="Pharmacy" data-rate="500">
+<div class = "pic8">
+        <img src="pictures/pharma.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under8">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Pharmacy</h2>
+        </div>
+        <div class = "pc8">
+                <img src="pictures/d8.png" alt="u1" width="40px" height="40px"/>
+                <p>A pharmacy provides medications and offers <br>
+                    guidance on their usage to patients.
+            </p>
+            </div>
+            <div class ="b8">
+                <a href="pharma.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class = "row3"> // third row with 2 service card
+<div class = "g5">
+    <div class="service-card" data-name="Ultrasound" data-rate="2200">
+<div class = "pic9">
+        <img src="pictures/ultra.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under9">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>Ultrasound</h2>
+        </div>
+        <div class = "pc9">
+                <img src="pictures/d9.png" alt="u1" width="40px" height="40px"/>
+                <p>Ultrasound creates images using sound waves,<br> aiding diagnosis without radiation.
+                </p>
+            </div>
+            <div class ="b9">
+                <a href="ultra.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+
+<div class="service-card" data-name="X-Ray" data-rate="600">
+<div class = "pic10">
+        <img src="pictures/ray.JPG" alt="m1" width="235px" height="205px"/>
+        <div class = "under10">
+            <img src="pictures/under.png" alt="u1" width="269px" height="205px"/>
+            <h2>X-Ray</h2>
+        </div>
+        <div class = "pc10">
+                <img src="pictures/d10.png" alt="u1" width="40px" height="40px"/>
+                <p>X-rays produce images of internal structures to<br>
+                     diagnose medical conditions and fractures.
+                </p>
+            </div>
+            <div class ="b10">
+                <a href="ray.html">
+                    <button>MORE</button>
+                  </a>
+            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div class = "mid">
+        <h1>Rates</h1>
+        <hr class = "line">
+     </div>
+</div>
+    
+
+    <div class="container">
+        <section>
+                <details>
+                        <summary>Blood Chemistry</summary>
+                        <img src="pictures/Blood Chemistry.png" alt="s1" width="441px" height="530px"/>
+                        <img src="pictures/Blood Chemistry1.png" alt="s1" width="441px" height="500px"/>
+
+
+                </details>
+                <details>
+                        <summary>Hematology</summary>
+                        <img src="pictures/Hematology.png" alt="s1" width="441px" height="350px"/>
+                </details>
+                <details>
+                        <summary>Clinical Microscopy</summary>
+                        <img src="pictures/Clinical Microscopy.png" alt="s1" width="441px" height="390px"/>
+
+                </details>
+                <details>
+                        <summary>Random/25Hr Urine</summary>
+                        <img src="pictures/Random_24Hr Urine.png" alt="s1" width="441px" height="350px"/>
+
+                </details>
+                <details>
+                        <summary>Tumor Markers</summary>
+                        <img src="pictures/Tumor Markers.png" alt="s1" width="441px" height="300px"/>
+
+                </details>
+                <details>
+                        <summary>Hapatitis Markers</summary>
+                        <img src="pictures/Hepatitis Markers.png" alt="s1" width="441px" height="500px"/>
+
+                </details>
+
+                <details>
+                    <summary>Serology</summary>
+                    <img src="pictures/Serology.png" alt="s1" width="441px" height="530px"/>
+
+            </details>
+
+            <details>
+                <summary>Endocrine Markers</summary>
+                <img src="pictures/Endocrine Markers.png" alt="s1" width="441px" height="500px"/>
+
+        </details>
+
+        <details>
+            <summary>Microbiology</summary>
+            <img src="pictures/Microbiology.png" alt="s1" width="441px" height="500px"/>
+
+        </details>
+
+        <details>
+            <summary>Histopathology</summary>
+            <img src="pictures/X-Ray.png" alt="s1" width="441px" height="500px"/>
+
+        </details>
+
+        <details>
+            <summary>X-Ray</summary>
+            <img src="pictures/X-Ray2.png" alt="s1" width="441px" height="500px"/>
+            <img src="pictures/X-Ray3.png" alt="s1" width="441px" height="500px"/>
+
+
+        </details>
+
+        <details>
+            <summary>Ultrasound</summary>
+            <img src="pictures/Ultrasound.png" alt="s1" width="441px" height="500px"/>
+
+        </details>
+
+        <details>
+            <summary>Miscellaneous</summary>
+            <img src="pictures/Miscellaneous.png" alt="s1" width="441px" height="350px"/>
+
+        </details>
+
+        <details>
+            <summary>Clinic Fees</summary>
+            <img src="pictures/Clinic Fees.png" alt="s1" width="441px" height="350px"/>
+
+        </details>
+            </section>
+        </div>
+
+     <div class = "foot">
+        <h1>Packages</h1>
+        <hr class="line2">
+     </div>
+    
+     <div class = "sub">
+        <h1>Pre-Employment</h1>
+    
+    <div class="rowpackages">
+    <div class ="pck1">
+    <div class = "packages">
+        <img src="pictures/a.png" alt="b1" width="220px" height="205px"/>
+        <h2>₱ 1,035</h2>
+        <p>
+                •CBC w/ Platelet Count<br>
+                •Chest X-Ray PA<br>
+                •Complete Urinalysis<br>
+                •Full Medical Exam<br>
+                •Routine Fecalysis
+        </p>
+    </div>
+
+
+    <div class = "packages1">
+        <img src="pictures/b.png" alt="b1" width="220px" height="205px"/>
+        <h2>₱ 945</h2>
+        <p>• CBC w/ Platelet Count<br>
+        • Chest X-Ray PA<br>
+        • Complete Urinalysis (10 Parameters)<br>
+        • Full Medical Exam (Medical History, Medical Certificate, PE & Visual Acuity)
+        </p>
+    </div>
+</div>
+
+<div class = "pck2">
+    <div class = "packages2">
+        <img src="pictures/c.png" alt="b1" width="220px" height="205px"/>
+        <h2>₱ 715</h2>
+        <p>• CBC w/ Platelet Count<br>
+        • Complete Urinalysis (10 Parameters)<br>
+        • Full Medical Exam (Medical History, Medical Certificate, PE & Visual Acuity)
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="footer"></div>
+<div class ="footlogo">
+    <img src = "pictures/gammalogo.png" alt="mail" width="200px" height="180px">
+</div>
+<div class = "footext">
+    <img src = "pictures/logotext.png" alt="mail" width="180px" height="75px">
+</div>
+<div class = "footp">
+    <p>A licensed tertiary diagnostic laboratory based <br>
+        in Metro Manila with wide range of Services from<br>
+        Clinical and Anatomical Pathology providing high<br>
+        quality and customer-friendly services.
+    </p>
+</div>
+<div class ="add">
+<div class = "footloc">
+    <img src = "pictures/loc.png" alt="mail" width="24px" height="24px">
+    <h2>Amparo Subd, 635 Malanting, cor Binayuyo,<br> 
+        Novaliches, Caloocan, 1425 Metro Manila</h2>
+</div>
+</div>
+<script src="searchbar.js"></script>
+
+</body>
+</html>
