@@ -62,33 +62,3 @@ document.addEventListener('click', (event) => {
         suggestionsBox.classList.add('hidden');
     }
 });
-
-
-
-
-
-function sortServices() {
-    const sortBy = document.getElementById('sortBy').value;
-    const container = document.getElementById('servicesContainer');
-    const cards = Array.from(container.getElementsByClassName('service-card'));
-
-    
-    cards.sort((a, b) => {
-        switch (sortBy) {
-            case 'nameAsc':
-                return a.getAttribute('data-name').localeCompare(b.getAttribute('data-name'));
-            case 'nameDesc':
-                return b.getAttribute('data-name').localeCompare(a.getAttribute('data-name'));
-            case 'ratesHigh':
-                return b.getAttribute('data-rate') - a.getAttribute('data-rate');
-            case 'ratesLow':
-                return a.getAttribute('data-rate') - b.getAttribute('data-rate');
-            default:
-                return 0; 
-        }
-    });
-
-    
-    container.innerHTML = '';
-    cards.forEach(card => container.appendChild(card));
-}
